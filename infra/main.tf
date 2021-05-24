@@ -32,7 +32,7 @@ data "aws_vpc" "main" {
 
 
 resource "aws_security_group" "db" {
-  description = "Allow postgres traffic"
+  description = "Allow traffic"
   vpc_id      = var.vpc_id
   name        = format("%s-%s-sg", var.name, var.environment)
 
