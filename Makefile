@@ -1,4 +1,4 @@
-.PHONY: up down kube-create-cluster kube-secret kube-delete-cluster kube-deploy-cluster kube-validate kube-config \
+.PHONY: bootstrap kube-create-cluster kube-secret kube-delete-cluster kube-deploy-cluster kube-validate kube-config \
 namespace-up namespace-down ssh-gen
 
 bootstrap:
