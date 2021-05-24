@@ -1,9 +1,9 @@
-.PHONY: up down tf-validate bootstrap ssh-gen tf-init pack ansible
+.PHONY: up down kube-create-cluster kube-secret kube-delete-cluster kube-deploy-cluster kube-validate kube-config \
+namespace-up namespace-down ssh-gen
 
 bootstrap:
 	cd bootstrap && terraform init
 	cd bootstrap && terraform apply --auto-approve
-
 
 ########
 # KOPS
@@ -32,7 +32,6 @@ kube-config:
 #######
 # Kubernetes
 #######
-
 
 namespace-up:
 
