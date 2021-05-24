@@ -37,6 +37,13 @@ The application can then be accessed through the browser of your choise on the f
 ```
 localhost:5000
 ```
+## Container
+A Dockerfile has been provided for the application if you wish to run it in docker. To build the image, issue the following commands:
+
+```
+cd src/
+docker build . -t todoapp:latest
+```
 
 ## Terraform
 
